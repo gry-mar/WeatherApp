@@ -21,7 +21,7 @@ enum Endpoint{
 extension Endpoint {
     var key: String {
         guard let filePath = Bundle.main.path(forResource: "WeatherAppInfo", ofType: "plist") else {
-              fatalError("Couldn't find file 'TMDB-Info.plist'.")
+              fatalError("Couldn't find file 'WeatherAppInfo.plist'.")
             }
         let plist = NSDictionary(contentsOfFile: filePath)
         switch self {
